@@ -133,6 +133,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `autoscaler.livenessProbe.successThreshold`     | Minimum consecutive successes for the probe to be considered successful after having failed.                                              | `1`                                                         |
 | `deployment.enabled`                            | Optionally disable the main deployment and its respective resources.                                                                      | `true`                                                      |
 | `deployment.name`                               | Name of the deployment if `deployment.enabled` is true. Otherwise the name of an existing deployment for the autoscaler or HPA to target. | `""`                                                        |
+| `deployment.skipConfig`                         | Optionally disable config map generation.                                                                                                 | `false`                                                     |
 
 See `values.yaml` for configuration notes. Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
